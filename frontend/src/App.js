@@ -45,7 +45,7 @@ function App() {
           ))}
           <form action="" className="example" onSubmit={submitHandler} >
             <input type="text" placeholder="Write ..." value={value}onChange={changeHandler} />
-            <button type="submit">확인</button>
+            <button type="submit">확인.</button>
           </form>
         </div>
       </header>
