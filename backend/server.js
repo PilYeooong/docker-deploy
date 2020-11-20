@@ -7,16 +7,16 @@ const app = express();
 
 app.use(bodyParser.json());
 
-// db.pool.query(
-//   `CREATE TABLE lists (
-//   id INTEGER AUTO_INCREMENT,
-//   value TEXT,
-//   PRIMARY KEY (id)
-// )`,
-//   (err, results, fields) => {
-//     console.log(results);
-//   }
-// );
+db.pool.query(
+  `CREATE TABLE lists (
+  id INTEGER AUTO_INCREMENT,
+  value TEXT,
+  PRIMARY KEY (id)
+)`,
+  (err, results, fields) => {
+    console.log(results);
+  }
+);
 
 app.get('/api', (req, res, next) => {
   res.send('hello api server');
